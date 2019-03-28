@@ -35,13 +35,13 @@
       }
 
       save(e){
-        let customEvent = new CustomEvent('evtSave',{bubbles:true,detail:'btnSave'});
+        let customEvent = new CustomEvent('evt-save',{bubbles:true,detail:'btnSave'});
         this.dispatchEvent(customEvent);
         console.log(customEvent);
 
       }
       cancelar(){
-         let customEvent = new CustomEvent('evtCancel',{bubbles:true,detail:'btnCancelar'});
+         let customEvent = new CustomEvent('evt-cancel',{bubbles:true,detail:'btnCancelar'});
         this.dispatchEvent(customEvent);
         console.log(customEvent);
       }
